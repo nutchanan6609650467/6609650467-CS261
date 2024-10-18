@@ -1,47 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e8abb5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .login-container {
     width: 300px;
-    margin: 100px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f8e8d3;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #CCC;
     border: none;
-    color: #fff;
-    cursor: pointer;
+    color: white;
+    cursor: not-allowed;
+    border-radius: 3px;
 }
-
-button:hover {
-    background-color: #0056b3;
+button:disabled{
+    background-color:#ccc
+}
+button:enabled {
+    cursor: pointer;
+    background-color: #A8D1E7;
 }
 
 #message {
     margin-top: 20px;
+    color: rgb(254, 0, 0);
+}
+.Out{
+    width: 400px;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: none;
 }
